@@ -5,10 +5,43 @@
         static void Main(string[] args)
         {
             //Küsi kasutajalt tema pikkust
+            Console.WriteLine("Palun sisesta oma pikkus (m)");
+            decimal Pikkus = decimal.Parse(Console.ReadLine());
+            if (Pikkus < 0)
+            {
+                Console.WriteLine("Võimatu pikkus");
+            }
+            else if (Pikkus < 1)
+            {
+                Console.WriteLine("Juntsu");
+            }
+            else if (Pikkus < 2)
+            {
+                Console.WriteLine("Tavaline kogle oled");
+            }
+            else if (Pikkus > 2)
+            {
+                Console.WriteLine("Oled hiiglane");
+            }
+
             //kui ta on lühem kui 0cm, ütle võimatu pikkus
             //kui ta on lühem kui 1m, ütle juntsu
             //kui ta on lühem kui 2m, ütle tavaline kolge
             //kui ta on pikem kui 2m, ütle hiiglane
+
+            Console.WriteLine("Kui vana sa oled?");
+            int kasutajavanus = int.Parse(Console.ReadLine());
+            Console.WriteLine("Mis on praegune aasta?");
+            int praeguneAasta = int.Parse(Console.ReadLine());
+            int arvuta_aasta = praeguneAasta - kasutajavanus;
+            if (arvuta_aasta > 2020 && arvuta_aasta < 2025)
+            {
+                Console.WriteLine("Kes sulle arvuti juba andis??");
+            }
+            if (arvuta_aasta < 2015 && arvuta_aasta > 2020)
+            {
+
+            }
 
             //Küsi kasutajalt kui vana ta on
             //küsi kasutajalt praegust aastaarvu
@@ -38,7 +71,7 @@
             //   Kui 2FA kood on pikem kui 6 tähte, ütle sissepääs keelatud, kood on liiga pikk
             //   Kui 2FA kood pn 6 tähte, siis lase sisse,
             //NB: 2FA kood ei pea matchima ekisteeriva näitega nagu parool
-            
+
         }
     }
 }
