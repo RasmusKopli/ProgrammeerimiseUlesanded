@@ -73,98 +73,98 @@
             //NB: 2FA kood ei pea matchima ekisteeriva näitega nagu parool
 
 
-            bool pliiatsid = false;
-            bool paber = false;
-            bool saag = false;
-            bool lauad = false;
-            string sisestus = "";
-            int i = 0;
-            while (i < 4)
-            {
-                switch (i)
-                {
-                    case 0:
-                        Console.WriteLine("Kas sul on pliitatsid");
-                        break;                    
-                    case 1:
-                        Console.WriteLine("Kas sul on paber?");
-                        break;
-                    case 2:
-                        Console.WriteLine("Kas sul on saag");
-                        break;
-                    case 3:
-                        Console.WriteLine("Kas sul on lauad?");
-                        break;
-                    default:
-                        break;
-                }
-                while (sisestus == "")
-                {
-                    sisestus = Console.ReadLine();
-                }
-                if (sisestus == "ei")
-                {
-                    switch (i)
-                    {
-                        case 0:
-                            pliiatsid = false;
-                            break;
-                        case 1:
-                            paber = false;
-                            break;
-                        case 2:
-                            saag = false;
-                            break;
-                        case 3:
-                            lauad = false;
-                            break;
-                    }
-                }
-                else if (sisestus == "jah")
-                {
-                    switch (i)
-                    {
-                        case 0:
-                            pliiatsid = true;
-                            break;
-                        case 1:
-                            paber = true;
-                            break;
-                        case 2:
-                            saag = true;
-                            break;
-                        case 3:
-                            lauad = true;
-                            break;
-                    }
-                }
-                i++;
-                sisestus = "";
-            }
-            if (!pliiatsid && !paber && lauad && saag)
-            {
-                Console.WriteLine("Võiksid õppida tisleriks");
-            }
-            else if (pliiatsid && paber && !lauad && !saag)
-            {
-                Console.WriteLine("Võid õppida arhitektiks");
-            }
-            else if (pliiatsid && paber && lauad && saag)
-            {
-                Console.WriteLine("Võiksid õppida arhitektiks ja tisleriks, sul on kõik uksed avatud");
-            }
-            else if (pliiatsid && !paber && !lauad && saag)
-            {
-                Console.WriteLine("Sul on tööriistad, aga materjali mitte, ma ei oska õelda");
-            }
-            else if (!pliiatsid && paber && lauad && !saag)
-            {
-                Console.WriteLine("Sul on materjal, aga pole tööriistu, mine k-rauta");
-            }
-            else
-            {
-                Console.WriteLine("Tühjade kätega ei tee midagi :(");
-            }
+            //bool pliiatsid = false;
+            //bool paber = false;
+            //bool saag = false;
+            //bool lauad = false;
+            //string sisestus = "";
+            //int i = 0;
+            //while (i < 4)
+            //{
+            //    switch (i)
+            //    {
+            //        case 0:
+            //            Console.WriteLine("Kas sul on pliitatsid");
+            //            break;                    
+            //        case 1:
+            //            Console.WriteLine("Kas sul on paber?");
+            //            break;
+            //        case 2:
+            //            Console.WriteLine("Kas sul on saag");
+            //            break;
+            //        case 3:
+            //            Console.WriteLine("Kas sul on lauad?");
+            //            break;
+            //        default:
+            //            break;
+            //    }
+            //    while (sisestus == "")
+            //    {
+            //        sisestus = Console.ReadLine();
+            //    }
+            //    if (sisestus == "ei")
+            //    {
+            //        switch (i)
+            //        {
+            //            case 0:
+            //                pliiatsid = false;
+            //                break;
+            //            case 1:
+            //                paber = false;
+            //                break;
+            //            case 2:
+            //                saag = false;
+            //                break;
+            //            case 3:
+            //                lauad = false;
+            //                break;
+            //        }
+            //    }
+            //    else if (sisestus == "jah")
+            //    {
+            //        switch (i)
+            //        {
+            //            case 0:
+            //                pliiatsid = true;
+            //                break;
+            //            case 1:
+            //                paber = true;
+            //                break;
+            //            case 2:
+            //                saag = true;
+            //                break;
+            //            case 3:
+            //                lauad = true;
+            //                break;
+            //        }
+            //    }
+            //    i++;
+            //    sisestus = "";
+            //}
+            //if (!pliiatsid && !paber && lauad && saag)
+            //{
+            //    Console.WriteLine("Võiksid õppida tisleriks");
+            //}
+            //else if (pliiatsid && paber && !lauad && !saag)
+            //{
+            //    Console.WriteLine("Võid õppida arhitektiks");
+            //}
+            //else if (pliiatsid && paber && lauad && saag)
+            //{
+            //    Console.WriteLine("Võiksid õppida arhitektiks ja tisleriks, sul on kõik uksed avatud");
+            //}
+            //else if (pliiatsid && !paber && !lauad && saag)
+            //{
+            //    Console.WriteLine("Sul on tööriistad, aga materjali mitte, ma ei oska õelda");
+            //}
+            //else if (!pliiatsid && paber && lauad && !saag)
+            //{
+            //    Console.WriteLine("Sul on materjal, aga pole tööriistu, mine k-rauta");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Tühjade kätega ei tee midagi :(");
+            //}
 
             //Console.WriteLine("Kas sul on pliiatsid?");
             //sisestus = Console.ReadLine();
